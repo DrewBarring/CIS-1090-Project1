@@ -7,20 +7,18 @@
  * Search is case sensitive.
  */
 
-//An array of words, initially empty
+//aray of words
 let words = [];
 
-//This function searches the words array for the word
-//parameter and returns true if it is found, false
-//otherwise
+//search function
+//paramter and returns true if it is found, false
 function search(word){
     return words.includes(word);
 }
-
-//This function adds the provided word to the words
-//array
+//addWord function
 function addWord(word){
-    words.push(word);
-}
+    words.push(word)
 
-export {search, addWord};
+}
+//export
+export{search, addWord};
