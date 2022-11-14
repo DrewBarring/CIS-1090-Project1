@@ -40,5 +40,12 @@ describe("SpellCheck tests", function () {
             assert.ok(isSpelledRight("samsquanch")); //Does find the word
         });
     });
+    describe("Spell Check add words Tests", function () {
+        it("Finds the word Drew after adding it", function () {
+            assert.ok(!isSpelledRight("Drew")); //Does not find the word
+            addWord("Drew");
+            assert.ok(isSpelledRight("Drew")); //Does find the word
+        });
+    });
 
 });
